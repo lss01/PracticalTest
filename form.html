@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Extreme D Enterprise</title>
+        <link rel="stylesheet" href="form.css" />
+        <link rel= "icon" href="img/favicon.ico">
+    </head>
+    <body>
+        <p>
+            Langkah 1) Sila logion ke akaun Maybank2u/CIMBClicks/BankIslam anda dan lakukan "fund transfer"  ke salah satu akaun di bawah sebanyak RM47.
+        </p>
+        <table>
+            <tr>
+                <td>Maybank&nbsp;</td>
+                <td>562021601450 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- </td>
+                <td>Extreme D Enterprise</td>
+            </tr>
+            <tr>
+                <td>Bank Islam&nbsp;</td>
+                <td>120290020241421 - </td>
+                <td>Mohd Suhaimy ABu Bakar</td>
+            </tr>
+            <tr>
+                <td>CIMB&nbsp;</td>
+                <td>12180079680520 &nbsp;&nbsp;- </td>
+                <td>Siti Noorhafazah Maaroop</td>
+            </tr>
+
+        </table>
+        <p>
+            Langkah 2) Selepas itu, simpan resit transaksi yang anda terima dan sila isikan borang pegesahan pembayaran dibawah.
+        </p>
+        <div class="boxes">
+            <input type="checkbox" id="box-1">
+            <label for="box-1">Ya! Saya telah membuat pembayaran. Sila hantarkan produk tersebut ke alamat saya seperti di bawah.</label>
+        </div>
+        <form name="RegForm" action="form.html" 
+          onsubmit="return myForm()" method="#">
+        <p>Name: <br><input type="text" 
+                        size="65" name="Name" /></p>
+        <br />
+        
+        <p>E-mail Address: <br><input type="text" 
+                               size="65" name="EMail" /></p>
+        <br />
+        
+        <p>Telephone: <br><input type="text" 
+                             size="65" name="Telephone" /></p>
+        <br />
+  
+        <p>
+            SELECT YOUR BANK<br>
+            <select type="text" value="" name="Bank">
+                <option>Maybank</option>
+                <option>Bank Islam</option>
+                <option>CIMB</option>
+            </select>
+        </p>
+        <br />
+        <p>Bukti Pembayaran: <br> (Sila copy paste transaksi anda disini jika anda menggunakan maybank2u, bankislam, cimbclicks, atau sila masukkan maklumat seperti no.transaksi, tempat & masa jika anda menggunakan kaedah bank in atau ATM Transfer)
+            <textarea cols="55"  name="Prove"> </textarea></p>
+        <p>
+            <input type="submit" 
+                   value="Hantar Maklumat Pembayaran" name="Submit" />
+            <input type="reset" 
+                   value="Reset" name="Reset" />
+        </p>
+        <br>
+    </form>
+    <p>
+        Langkah 3) Kami akan menyemak maklumat pembayaran anda terlebih dahulu dan <b><u>ebook tersebut akan dihantar ke email anda dalam masa 24 jam.</u></b>
+    </p>
+    <br><br>
+    <a href="info.html">KEMBALI </a>
+    <br><br>
+    <script src="form.js" type="text/javascript"></script>
+    </body>
+</html>
